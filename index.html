@@ -10,6 +10,93 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+			<style>
+			
+/* Layout: categories side by side */
+.filter-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+   margin-bottom: 20px;
+}
+
+/* Dropdown toggle button */
+.dropdown-toggle {
+  background: #8b9b8b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.dropdown-toggle:hover {
+  background: #55453a;
+  color:#fff ;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.5rem;
+  display: none; /* hidden by default */
+  min-width: 180px;
+  z-index: 10;
+}
+
+/* Show menu when dropdown is active */
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+/* Checkbox labels */
+.dropdown-menu label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  padding: 0.2rem 0;
+  cursor: pointer;
+}
+
+/* Highlight selected dropdown options */
+.dropdown-menu label.selected {
+  background-color: #8b9b8b; /* highlight color */
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.2rem 0.4rem;
+}
+.clear-btn {
+  background: #ccc;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.clear-btn:hover {
+  background: #999;
+  color: #fff;
+}
+
+
+</style>
+
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -34,8 +121,36 @@
 				<!-- Two -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
+							<h2>Stardew Valley Recipe Book</h2>
+							<p> Knowing exactly what to do with collected items in a video game can be difficult. With Thanksgiving occurring and Tableau’s Iron Viz food theme happening, I knew I had to try and craft a traditional recipe style book. </p>
+							<ul class="actions stacked">
+								<li><a href="https://github.com/Marissa-the-Analyst/Stardew-Valley-Recipe" class="button">View Project</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/stardew.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Crawler or Cruller? A Hero Name Analysis</h2>
+							<p>Hideyuki Furuhasi’s 126-chapter manga series, My Hero Academia: Vigilantes is a charming tale and reframing of what it means to be a hero. Check out this project to uncover which hero name sticks!</p>
+							<ul class="actions stacked">
+								<li><a href="https://github.com/Marissa-the-Analyst/Crawler-Cruller" class="button">View Project</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/16 Full.png" alt="" />
+						</div>
+					</section>
+
+				<!-- Four -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
 							<h2>Stroll to 2800000</h2>
-							<p>In 2024, I took 2,600,000 steps. I'm trying to add 200,000 to that in 2025! Using Tableau, explore my monthly progress with easy to read KPIs, visually appealing graph, and check to see whether or not I'm on pace to hit my goal! </p>
+							<p>In 2024, I took 2,600,000 steps. I'm trying to add 200,000 to that in 2025! Using Tableau, explore my monthly progress with easy to read KPIs, visually appealing graph, and check to see whether or not I'm on pace to hit my goal!</p>
 							<ul class="actions stacked">
 								<li><a href="https://github.com/Marissa-the-Analyst/Strollto2800000" class="button">View Project</a></li>
 							</ul>
@@ -44,45 +159,141 @@
 							<img src="images/stroll.jpg" alt="" />
 						</div>
 					</section>
-
-				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Northwest Georgia Tornado Stats</h2>
-							<p>Tornado season leaves areas wracked with severe thunderstorms. Explore this map of torandos to see what NW Georgia counties see the highest tornados, injuries, and deaths as a result of these twisters!</p>
-							<ul class="actions stacked">
-								<li><a href="https://github.com/Marissa-the-Analyst/NWTornadoStats" class="button">View Project</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/Tornado.jpg" alt="" />
-						</div>
-					</section>
-
-				<!-- Four -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Veggie Shipment Projections</h2>
-							<p>This Python project takes vegetable sales in weight and uses time series model, ARIMA, to forecast the next 6 months of sale weights. Check out this project to this model and the creation of a stakeholder-friendly visualization!</p>
-							<ul class="actions stacked">
-								<li><a href="https://github.com/Marissa-the-Analyst/Veggie-Ship-ARIMA" class="button">View Project</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/Veggie.jpg" alt="" />
-						</div>
-					</section>
 				<!-- Five -->
-				<section class="wrapper style1 align-center">
-					<div class="inner">
-						<h2>More Projects</h2>
-						<p>Below you will find more of my projects. I've notated each project with the respective program icon that the majority of the work was done in.</p>
-					</div>
+		<section class="wrapper style1 align-center">
 
-					<!-- Gallery -->
-						<div class="gallery style2 medium lightbox onscroll-fade-in">
-							
-							<article>
+
+<!-- Gallery Filters -->
+<div class="inner">
+<h2>More Projects</h2>
+<p>
+	Below you will find more of my projects. I've notated each project with the respective program icon that the majority of the work was done in.
+</p>
+</div>
+<div id="filters">
+  <h3>Filters</h3>
+  <div class="filter-row">
+    
+    <!-- Year Filter -->
+    <div class="dropdown">
+      <button class="dropdown-toggle">Year ▾</button>
+      <div class="dropdown-menu">
+        <label><input type="checkbox" name="year" value="2024"> 2024</label>
+        <label><input type="checkbox" name="year" value="2025"> 2025</label>
+      </div>
+    </div>
+
+    <!-- Tool Filter -->
+    <div class="dropdown">
+      <button class="dropdown-toggle">Primary Data Tool ▾</button>
+      <div class="dropdown-menu">
+        <label><input type="checkbox" name="tool" value="Python"> Python</label>
+        <label><input type="checkbox" name="tool" value="MySQL"> MySQL</label>
+        <label><input type="checkbox" name="tool" value="Tableau"> Tableau</label>
+        <label><input type="checkbox" name="tool" value="Excel"> Excel</label>
+        <label><input type="checkbox" name="tool" value="PowerBI"> PowerBI</label>
+      </div>
+    </div>
+
+    <!-- Category Filter -->
+    <div class="dropdown">
+      <button class="dropdown-toggle">Data Category ▾</button>
+      <div class="dropdown-menu">
+        <label><input type="checkbox" name="category" value="Literature"> Literature</label>
+        <label><input type="checkbox" name="category" value="Nature"> Nature</label>
+        <label><input type="checkbox" name="category" value="Business"> Business</label>
+        <label><input type="checkbox" name="category" value="Personal"> Personal</label>
+        <label><input type="checkbox" name="category" value="Media/Entertainment"> Media/Entertainment</label>
+      </div>
+    </div>
+
+    <!-- Clear Filters button (outside all dropdowns) -->
+    <button id="clearFilters" class="clear-btn">Clear Filters ✖</button>
+
+  </div>
+</div>
+
+
+<!-- Gallery -->
+       				<div class="gallery style2 medium lightbox onscroll-fade-in">
+						<article data-tool = "PowerBI" data-category="Business" data-year="2025">
+								<img src="images/gallery/thumbs/18.png" class="image" />
+								</a>
+								<div class="caption">
+									<h3>PCB Process Improvement</h3>
+									<p> My final SNHU project explores the fictional problem that many businesses would hate to find themselves in. Not only is there an increase in demand, but there's also an increase in defects! Tasked to address these issues with raw defect data from a quality assurance team, I identify problem areas and provide actionable next steps based on the exploratory analysis.</p>
+									<ul class="actions fixed">
+										<li><li> <a href="https://github.com/Marissa-the-Analyst/PCB-Process-Improvement" class="button small">View Project</a></span></li>
+									</ul>
+								</div>
+							</article>
+						<article data-tool = "PowerBI" data-category="Nature" data-year="2025">
+								<img src="images/gallery/thumbs/17.png" class="image" />
+								</a>
+								<div class="caption">
+									<h3>Groundhog Day Audience Exercise</h3>
+									<p>Choosing the right visualization to convey to audiences is important for conveying the right message. In this exercise, I took one dataset about groundhog day, and created two different visualizations tailored to audiences with different knowledge levels.</p>
+									<ul class="actions fixed">
+										<li><li> <a href="https://github.com/Marissa-the-Analyst/Groundhog-Day-Aud-Exercise" class="button small">View Project</a></span></li>
+									</ul>
+								</div>
+							</article>
+						<article data-tool = "Python" data-category="Business" data-year="2025">
+								<img src="images/gallery/thumbs/15.png" class="image" />
+								</a>
+								<div class="caption">
+									<h3>HR Attrition Project</h3>
+									<p>Attrition is something employers try to combat every year. Surveys and demographics are great ways to get to the heart of what employees care about. In this project, we dive into identifying which features directly lead to attrition and create actionable metrics to reduce attrition within the company.</p>
+									<ul class="actions fixed">
+										<li><li> <a href="https://github.com/Marissa-the-Analyst/HRAttrition-Project?tab=readme-ov-file" class="button small">View Project</a></span></li>
+									</ul>
+								</div>
+							</article>
+						<article data-tool = "Excel" data-category="Business" data-year="2025">
+								<img src="images/gallery/thumbs/13.png" class="image" />
+								</a>
+								<div class="caption">
+									<h3>BCG Matrix Dog-Treat-Co</h3>
+									<p>This fictional dog treat company seeks to understand how their 8 different products in stores are performing. Which products should they invest in? What products hold large market shares in the dog industry? Lets find out with this fictional dataset and business analysis tool, the BCG matrix!</p>
+									<ul class="actions fixed">
+										<li><li> <a href="https://github.com/Marissa-the-Analyst/BCG-Dog-Treat-Co" class="button small">View Project</a></span></li>
+									</ul>
+								</div>
+							</article>
+						<article data-tool = "Tableau" data-category="Media/Entertainment" data-year="2025">
+								<img src="images/gallery/thumbs/14.png" class="image" />
+								</a>
+								<div class="caption">
+									<h3>LTA North Season 3 Rankings</h3>
+									<p>I explore League of Legend's LTA North Split 3 Ranking system and dive into complex win rates, scheduling, and placements to overall determine a team's ranking at the end of each week.</p>
+									<ul class="actions fixed">
+										<li><li> <a href="https://github.com/Marissa-the-Analyst/LTA-North-Split3-Rankings" class="button small">View Project</a></span></li>
+									</ul>
+								</div>
+							</article>
+						<article data-tool = "Tableau" data-category="Nature" data-year="2025">
+								<img src="images/gallery/thumbs/11.png" class="image" />
+								</a>
+								<div class="caption">
+									<h3>Northwest Georgia Tornado Stats</h3>
+									<p>Tornado season leaves areas wracked with severe thunderstorms. Explore this map of torandos to see what NW Georgia counties see the highest tornados, injuries, and deaths as a result of these twisters!</p>
+									<ul class="actions fixed">
+										<li><li> <a href="https://github.com/Marissa-the-Analyst/NWTornadoStats" class="button small">View Project</a></span></li>
+									</ul>
+								</div>
+							</article>
+						<article data-tool = "Python" data-category="Business" data-year="2025">
+								<img src="images/gallery/thumbs/10.png" class="image" />
+								</a>
+								<div class="caption">
+									<h3>Veggie Sales ARIMA Forecast</h3>
+									<p>This Python project takes vegetable sales in weight and uses time series model, ARIMA, to forecast the next 6 months of sale weights. Check out this project to this model and the creation of a stakeholder-friendly visualization!</p>
+									<ul class="actions fixed">
+										<li><li> <a href="https://github.com/Marissa-the-Analyst/Veggie-Ship-ARIMA" class="button small">View Project</a></span></li>
+									</ul>
+								</div>
+							</article>
+						<article data-tool = "Excel" data-category="Literature" data-year="2024">
 								<img src="images/gallery/thumbs/07.png" class="image" />
 								</a>
 								<div class="caption">
@@ -93,7 +304,7 @@
 									</ul>
 								</div>
 							</article>
-							<article>
+							<article data-tool = "MySQL" data-category="Nature" data-year="2024">
 								<img src="images/gallery/thumbs/08.png" class="image">
 								</a>
 								<div class="caption">
@@ -104,7 +315,7 @@
 									</ul>
 								</div>
 							</article>
-							<article>
+							<article data-tool = "Python" data-category="Business" data-year="2025">
 								<img src="images/gallery/thumbs/09.png" class="image" />
 								</a>
 								<div class="caption">
@@ -115,7 +326,7 @@
 									</ul>
 								</div>
 							</article>
-							<article>
+							<article data-tool = "Excel" data-category="Business" data-year="2024">
 								<img src="images/gallery/thumbs/01.png" class="image" />
 								</a>
 								<div class="caption">
@@ -126,7 +337,7 @@
 									</ul>
 								</div>
 							</article>
-							<article>
+							<article data-tool = "Excel" data-category="Business" data-year="2024">
 								<img src="images/gallery/thumbs/02.png" class="image" />
 								</a>
 								<div class="caption">
@@ -137,7 +348,7 @@
 									</ul>
 								</div>
 							</article>
-							<article>
+							<article data-tool = "PowerBI" data-category="Business" data-year="2024">
 								<img src="images/gallery/thumbs/05.png" class="image" />
 								</a>
 								<div class="caption">
@@ -148,7 +359,7 @@
 									</ul>
 								</div>
 							</article>
-							<article>
+							<article data-tool = "Tableau" data-category="Business" data-year="2024">
 								<img src="images/gallery/thumbs/06.png" class="image" />
 								</a>
 								<div class="caption">
@@ -160,7 +371,7 @@
 								</div>
 							</article>
 
-							<article>
+							<article data-tool = "MySQL" data-category="Business" data-year="2024">
 								<img src="images/gallery/thumbs/04.png" class="image" />
 								</a>
 								<div class="caption">
@@ -198,14 +409,87 @@
 
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+ const projects = document.querySelectorAll(".gallery article");
+const filters = document.querySelectorAll(".dropdown-menu input[type='checkbox']");
+
+function filterProjects() {
+  const selectedYear = Array.from(document.querySelectorAll("input[name='year']:checked")).map(cb => cb.value);
+  const selectedTools = Array.from(document.querySelectorAll("input[name='tool']:checked")).map(cb => cb.value);
+  const selectedCategories = Array.from(document.querySelectorAll("input[name='category']:checked")).map(cb => cb.value);
+
+  projects.forEach(project => {
+    const projectYear = project.getAttribute("data-year");
+    const projectTool = project.getAttribute("data-tool");
+    const projectCategory = project.getAttribute("data-category");
+
+	console.log("Selected categories:", selectedCategories);
+	console.log("Project category:", projectCategory);
+
+
+    const matchesYear = selectedYear.length === 0 || selectedYear.includes(projectYear);
+    const matchesTool = selectedTools.length === 0 || selectedTools.includes(projectTool);
+    const matchesCategory = selectedCategories.length === 0 || selectedCategories.includes(projectCategory);
+
+    project.style.display = (matchesYear && matchesTool && matchesCategory) ? "block" : "none";
+  });
+}
+
+filters.forEach(cb => cb.addEventListener("change", filterProjects));
+
+
+// Toggle selected class on labels when checkboxes are checked
+document.querySelectorAll('.dropdown-menu input[type="checkbox"]').forEach(input => {
+  input.addEventListener('change', () => {
+    const label = input.closest('label'); // finds the wrapping label
+    if (label) {
+      label.classList.toggle('selected', input.checked);
+    }
+  });
+});
+document.getElementById('clearFilters').addEventListener('click', () => {
+// Uncheck all checkboxes in all dropdowns
+  document.querySelectorAll('.dropdown-menu input[type="checkbox"]').forEach(cb => {
+    cb.checked = false;
+    const label = cb.closest('label');
+    if (label) {
+      label.classList.remove('selected'); // remove highlight
+    }
+  });
+
+  // Show all projects again
+  projects.forEach(project => {
+    project.style.display = 'block';
+  });
+});
+
+</script>
+
+<script>
+  // Dropdown toggle
+  document.querySelectorAll('.dropdown-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const dropdown = button.parentElement;
+      dropdown.classList.toggle('open');
+    });
+  });
+
+  // Close dropdowns when clicking outside
+  document.addEventListener('click', e => {
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove('open');
+      }
+    });
+  });
+</script>
