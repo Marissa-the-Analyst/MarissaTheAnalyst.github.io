@@ -8601,3 +8601,23 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+			/* Custom No Results Message */
+#no-results {
+    display: none; /* Hidden by default, JS toggles this */
+    width: 100%;
+    flex-basis: 100%; /* Forces it to take up the full row in a flex layout */
+    padding: 6rem 2rem;
+    text-align: center;
+    background-color: transparent;
+}
+
+#no-results h3 {
+    color: #8b9b8b !important; /* Sage green */
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#no-results p {
+    color: #55453a !important; /* Deep brown */
+    font-style: italic;
+}
